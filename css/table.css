@@ -1,0 +1,238 @@
+:root {
+  --h-tb-row: 60px;
+  --w-sell-id: 102px;
+  --w-sell-create-date: 175px;
+  --w-sell-change-date: 173px;
+  --w-sell-contacts: 160px;
+  --w-sell-actions: 209px;
+  --duration-tr: 200ms:
+}
+
+
+.table {
+  width: 100%;
+  line-height: 19px;
+  border-spacing: 0 2px;
+}
+
+.table__head {
+  font-size: 12px;
+  color: var(--color-gray-text);
+}
+
+.table__head-row {}
+
+.table__head-cell {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.table__head-cell:first-child {
+  padding-left: 20px;
+}
+
+.table__head-cell:last-child {
+  padding-right: 20px;
+}
+
+.table__head-cell_id {
+  min-width: var(--w-sell-id);
+}
+.table__head-cell_full-name {
+  width: auto;
+}
+.table__head-cell_create-date {
+  min-width: var(--w-sell-create-date);
+}
+.table__head-cell_change-date {
+  min-width: var(--w-sell-change-date);
+}
+.table__head-cell_contacts {
+  min-width: var(--w-sell-contacts);
+}
+.table__head-cell_actions {
+  min-width: var(--w-sell-actions);
+}
+
+.sortable {
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: var(--duration-tr);
+}
+
+.sortable:hover {
+  color: var(--color-black);
+}
+
+.sortable:hover .table__icon-sort,
+.sortable:hover .table__type-sort {
+  opacity: 1;
+}
+
+.table__icon-sort,
+.table__type-sort {
+  color: var(--color-firm);
+  opacity: 0.7;
+  transition-property: opacity, transform;
+  transition-duration: var(--duration-btn-animation);
+}
+
+.table__head-cell.is-sorted {
+  color: var(--color-firm);
+}
+
+.table__head-cell.is-sorted .table__icon-sort,
+.table__head-cell.is-sorted .table__type-sort {
+  opacity: 1;
+}
+
+.table__icon-sort.sort-up svg{
+  transform: rotate(180deg);
+}
+
+/* table body */
+
+.table__body {
+  background-color: var(--color-white);
+}
+
+.table__body-row {
+  height: 60px;
+  transition-property: background-color;
+  transition-duration: var(--duration-btn-animation);
+}
+
+.table__body-row:hover {
+  background-color: var(--color-grey-91);
+}
+
+.table__body-cell {
+  padding: 5px;
+}
+
+.table__body-cell:first-child {
+  padding-left: 20px;
+}
+
+.table__body-cell:last-child {
+  padding-right: 20px;
+}
+
+.table__body-cell_contacts {
+
+}
+
+/* contacts */
+.cell_contacts {
+
+}
+
+.cell-contact__list {
+  width: 108px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell-contact__item:not(:nth-child(5n)) {
+  margin-right: 7px;
+}
+
+.cell-contact__item:nth-child(-n+6) {
+  margin-bottom: 7px;
+}
+
+.cell-contact__link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  color: var(--color-firm-07);
+  transition-property: color;
+  transition-duration: var(--duration-btn-animation);
+
+}
+
+.cell-contact__link:hover {
+  color: var(--color-firm);
+}
+
+.tooltip-contact {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.btn-unwrap {
+  width: 16px;
+  height: 16px;
+  padding-right: 2px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--color-black);
+  border: 1px solid var(--color-firm-07);
+  border-radius: 50%;
+  transition-property: border-color;
+  transition-duration: var(--duration-btn-animation);
+}
+
+.btn-unwrap:hover {
+  border-color: var(--color-firm);
+}
+
+.unwrap-toollee__content {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+
+}
+
+
+
+.tooltip-contact__contant {
+
+}
+
+.tooltip-contact__wrap {
+  display: flex;
+}
+
+.tooltip-contact__type {
+  margin-right: 4px;
+  font-weight: 400;
+}
+
+.tooltip-contact__value {
+  font-weight: 700;
+  color: var(--color-firm-81);
+  text-decoration-line: underline;
+}
+
+/* active */
+.table__wrap-buttons {
+
+}
+
+.table__button-change {
+
+}
+
+.table__button-delete {
+
+}
+
+.table__icon-change {
+
+}
+
+.table__icon-delete {
+
+}
+
+.table__text-change {
+
+}
+
+.table__text-delete {
+
+}
+

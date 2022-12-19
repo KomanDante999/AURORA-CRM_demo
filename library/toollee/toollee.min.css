@@ -1,0 +1,57 @@
+.toollee-theme--black {
+  background-color: black;
+  color: white;
+}
+
+.toollee-theme--white {
+  background-color: white;
+  color: black;
+}
+
+.toollee-theme--blue {
+  background-color: blue;
+  color: white;
+}
+
+.toollee--target {
+  position: relative;
+}
+
+.toollee {
+}
+
+.toollee__container {
+  padding: 10px 20px;
+}
+
+.toollee__content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.toollee__content > span:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
+
+.toollee__arrow {
+  background-color: transparent;
+  border-top-style: solid ;
+  border-left-color: transparent;
+  border-left-style: solid;
+  border-right-color: transparent;
+  border-right-style: solid;
+}
+
+.toollee__arrow.toollee-theme--black {
+  border-top-color: black;
+}
+
+.toollee__arrow.toollee-theme--white {
+  border-top-color: white;
+}
+
+.toollee__arrow.toollee-theme--blue {
+  border-top-color: blue;
+}
